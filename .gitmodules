@@ -1,0 +1,3 @@
+[submodule "external/frameworks"]
+	path = external/frameworks
+	url = https://github.com/149segolte/Framework-Selector.git
