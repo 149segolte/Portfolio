@@ -1,78 +1,44 @@
 ---
-import icon from '../assets/icon.svg';
-import right_arrow from '../assets/right_arrow.svg';
-const icon_alt = '149segolte';
-const right_arrow_alt = 'move right';
+import LandingPage from "../layouts/landing.astro";
 ---
-<style>
-@keyframes bounceX {
-    0%, 100% {
-        transform: translateX(-25%);
-        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-    }
-    50% {
-        transform: translateX(0);
-        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-    }
-}
-</style>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href={icon.src} />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Welcome, to my Portfolio</title>
-	</head>
-	<body class="w-screen h-screen bg-emerald-50 text-md">
-        <div class="w-full h-full py-20 px-56">
-            <div class="w-full h-full bg-white rounded-[3rem] shadow-2xl border-[10px] border-zinc-700 flex flex-row relative">
-                <img src={icon.src} alt={icon_alt} class="w-16 h-16 my-4 mx-5" />
-                <div class="w-full h-full flex flex-col justify-center px-16">
-                    <h1 class="text-6xl font-bold text-gray-800 w-0 text-center whitespace-nowrap transition-all duration-500">
-                        Hi, I am
-                        <br />
-                        <span class="text-7xl bg-gradient-to-r from-emerald-400 to-emerald-700 bg-clip-text text-transparent">
-                            Shreyansh Nayak
-                        </span>,
-                        <br />
-                        currently an undergrad student
-                        <br />
-                        tinkering with <span class="text-emerald-600">Machine Learning</span>
-                        <br />
-                        and <span class="text-emerald-600">Full-stack Development</span>.
-                        <br />
-                    </h1>
-                </div>
-                <div class="w-max h-full flex flex-col justify-center absolute right-0 px-4">
-                    <button class="text-emerald-100 w-16 h-16 m-4 rotate-90 animate-[bounceX_1s_infinite] hover:text-emerald-600 transition duration-300" onclick="">
-                        <svg viewBox="-2.4 -2.4 28.80 28.80" class="fill-current stroke-zinc-700" xmlns="http://www.w3.org/2000/svg" transform="rotate(0)">
-	                        <path id="r_arrow" d="M13 15L16 12M16 12L13 9M16 12H8M21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12Z" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                </div>
-                <a href="https://github.com/149segolte/149segolte/blob/main/Resume.pdf" class="z-10 h-max px-8 py-4 text-xl text-emerald-600 font-mono font-bold bg-emerald-100 rounded-bl-[2.4rem] rounded-tr-[2.4rem] hover:bg-emerald-700 hover:text-emerald-50 transition duration-300">
-                    Resume
-                </a>
-                <div class="absolute bottom-0 right-0 z-10 flex flex-row justify-center items-center text-zinc-700 p-2">
-                    <a href="https://twitter.com/149segolte">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 m-2 hover:rotate-180 hover:fill-emerald-600 transition duration-300" fill="currentcolor" viewBox="0 -2 20 20">
-                            <path fill-rule="evenodd" d="M10.29 7377a11.5 11.5 0 0 0 11.68-11.5c0-.17 0-.34-.02-.52a8.3 8.3 0 0 0 2.05-2.09c-.75.33-1.54.54-2.36.64a4 4 0 0 0 1.8-2.24c-.8.47-1.68.8-2.6.98a4.15 4.15 0 0 0-5.8-.17 4 4 0 0 0-1.2 3.86 11.76 11.76 0 0 1-8.45-4.22 4 4 0 0 0 1.27 5.39 4.3 4.3 0 0 1-1.86-.5v.05a4.06 4.06 0 0 0 3.3 3.96c-.61.16-1.25.18-1.86.06a4.1 4.1 0 0 0 3.83 2.81A8.32 8.32 0 0 1 4 7375.2a11.75 11.75 0 0 0 6.29 1.8" transform="translate(-4 -7361)"/>
-                        </svg>
-                    </a>
-                    <a href="https://linkedin.com/in/149segolte">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 m-2 hover:rotate-180 hover:fill-emerald-600 transition duration-300" fill="currentcolor" viewBox="0 0 24 24">
-                            <path fill-rule="evenodd" d="M6 2a4 4 0 0 0-4 4v12a4 4 0 0 0 4 4h12a4 4 0 0 0 4-4V6a4 4 0 0 0-4-4H6ZM4 6c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6Zm5 5a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0v-6Zm.5-3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM12 10a1 1 0 0 1 .82.43A3.51 3.51 0 0 1 14.5 10c2.16 0 3.5 1.93 3.5 3.57V17a1 1 0 1 1-2 0v-3.43c0-.78-.66-1.58-1.5-1.58-.52 0-1.1.28-1.5.96V17a1 1 0 1 1-2 0v-6a1 1 0 0 1 1-1Z" clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                    <a href="https://github.com/149segolte">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 m-2 hover:rotate-180 hover:fill-emerald-600 transition duration-300" fill="currentcolor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M94 7399c5.52 0 10 4.59 10 10.25 0 4.53-2.86 8.37-6.83 9.73-.51.1-.69-.22-.69-.5l.01-2.8c0-.96-.32-1.59-.68-1.9 2.23-.26 4.57-1.12 4.57-5.06a4 4 0 0 0-1.03-2.75c.1-.26.45-1.3-.1-2.72 0 0-.84-.27-2.75 1.05a9.4 9.4 0 0 0-5 0c-1.91-1.32-2.75-1.05-2.75-1.05a3.78 3.78 0 0 0-.1 2.72 4.03 4.03 0 0 0-1.03 2.75c0 3.93 2.33 4.8 4.55 5.06-.28.26-.54.71-.63 1.38-.57.26-2.02.71-2.91-.86 0 0-.53-.98-1.53-1.05 0 0-.98-.02-.07.62 0 0 .65.32 1.1 1.5 0 0 .6 1.83 3.38 1.21l.01 1.9c0 .28-.18.6-.68.5a10.23 10.23 0 0 1-6.84-9.73c0-5.66 4.48-10.25 10-10.25" transform="translate(-84 -7399)"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-	</body>
-</html>
+<LandingPage>
+	<div>
+		<h1 class="text-4xl lg:text-5xl 2xl:text-6xl font-bold text-gray-800">
+			Hi, I am
+			<br />
+			<span
+				class="text-5xl lg:text-6xl 2xl:text-7xl bg-gradient-to-r from-emerald-400 to-emerald-700 bg-clip-text text-transparent"
+				>Shreyansh Nayak</span
+			>,
+			<br />
+			currently an undergrad student
+			<br />
+			tinkering with <span class="text-emerald-600">Machine Learning</span
+			>
+			<br />
+			and <span class="text-emerald-600">Full-stack Development</span>.
+			<br />
+		</h1>
+	</div>
+
+	<div>
+		<h2 class="text-2xl lg:text-3xl 2xl:text-4xl font-bold text-gray-800">
+			Currently working on
+		</h2>
+		<ul class="list-disc list-inside text-gray-800">
+			<li>
+				<a href="">
+					<span class="text-emerald-600">A</span>
+					<span class="text-emerald-600">Machine Learning</span> project
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<span class="text-emerald-600">A</span>
+					<span class="text-emerald-600">Full-stack</span> project
+				</a>
+			</li>
+		</ul>
+	</div>
+</LandingPage>
