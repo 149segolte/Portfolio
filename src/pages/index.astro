@@ -1,6 +1,14 @@
 ---
 import LandingPage from "../layouts/landing.astro";
+import IP from "../assets/256x256.webp";
 ---
+
+<style>
+	.orin-vert {
+		writing-mode: vertical-lr;
+		text-orientation: sideways;
+	}
+</style>
 
 <LandingPage>
 	<div>
@@ -22,23 +30,173 @@ import LandingPage from "../layouts/landing.astro";
 		</h1>
 	</div>
 
-	<div>
+	<div class="w-full h-max py-16 md:py-16 lg:py-20 xl:py-24 flex flex-col">
 		<h2 class="text-2xl lg:text-3xl 2xl:text-4xl font-bold text-gray-800">
-			Currently working on
+			Things I have worked on:
 		</h2>
-		<ul class="list-disc list-inside text-gray-800">
-			<li>
-				<a href="">
-					<span class="text-emerald-600">A</span>
-					<span class="text-emerald-600">Machine Learning</span> project
-				</a>
-			</li>
-			<li>
-				<a href="">
-					<span class="text-emerald-600">A</span>
-					<span class="text-emerald-600">Full-stack</span> project
-				</a>
-			</li>
-		</ul>
+		<div class="w-full h-max mt-8 flex flex-col sm:flex-row">
+			<div
+				class="w-full h-full grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-h-[240px]"
+			>
+				<div
+					class="flex flex-col w-full h-full p-2 bg-zinc-800 rounded-xl"
+				>
+					<div class="flex flex-row m-2 items-center">
+						<img
+							src={IP.src}
+							class="w-8 h-8"
+							alt="Indore Pack Pvt. Ltd."
+						/>
+						<h3 class="text-2xl ml-4 font-bold text-gray-200">
+							Company Portfolio
+						</h3>
+					</div>
+					<p class="text-md m-2 mx-4 text-gray-300">
+						Developed a company portfolio website for Indore Pack
+						Pvt. Ltd. accomodating all the information about their
+						product lineup and services.
+					</p>
+					<div
+						class="flex flex-row m-2 justify-center items-center mt-auto"
+					>
+						<div
+							class="text-sm text-zinc-800 grid grid-flow-col-dense gap-1"
+						>
+							<div class="bg-emerald-200 rounded-md px-2 py-1">
+								Nuxt.js
+							</div>
+							<div class="bg-emerald-200 rounded-md px-2 py-1">
+								Tailwind
+							</div>
+							<div class="bg-emerald-200 rounded-md px-2 py-1">
+								Cloudflare
+							</div>
+						</div>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-8 h-8 ml-auto text-zinc-200"
+							fill="none"
+							viewBox="0 0 24 24"
+							><path
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M10 5H8.2c-1.12 0-1.68 0-2.1.22a2 2 0 0 0-.88.87C5 6.52 5 7.08 5 8.2v7.6c0 1.12 0 1.68.22 2.1.19.38.5.7.87.88.43.22.99.22 2.1.22h7.61c1.12 0 1.68 0 2.1-.22a2 2 0 0 0 .88-.87c.22-.43.22-.99.22-2.1V14m1-5V4m0 0h-5m5 0-7 7"
+							></path></svg
+						>
+					</div>
+				</div>
+				<div
+					class="flex flex-col w-full h-full p-2 bg-zinc-800 rounded-xl"
+				>
+					<div class="flex flex-row m-2 items-center">
+						<img
+							src={IP.src}
+							class="w-8 h-8"
+							alt="Indore Pack Pvt. Ltd."
+						/>
+						<h3 class="text-2xl ml-4 font-bold text-gray-200">
+							Company Portfolio
+						</h3>
+					</div>
+					<p class="text-md m-2 mx-4 text-gray-300">
+						Developed a company portfolio website for Indore Pack
+						Pvt. Ltd. accomodating all the information about their
+						product lineup and services.
+					</p>
+					<div
+						class="flex flex-row m-2 justify-center items-center mt-auto"
+					>
+						<div
+							class="text-sm text-zinc-800 grid grid-flow-col-dense gap-1"
+						>
+							<div class="bg-emerald-200 rounded-md px-2 py-1">
+								Nuxt.js
+							</div>
+							<div class="bg-emerald-200 rounded-md px-2 py-1">
+								Tailwind
+							</div>
+							<div class="bg-emerald-200 rounded-md px-2 py-1">
+								Cloudflare
+							</div>
+						</div>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-8 h-8 ml-auto text-zinc-200"
+							fill="none"
+							viewBox="0 0 24 24"
+							><path
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M10 5H8.2c-1.12 0-1.68 0-2.1.22a2 2 0 0 0-.88.87C5 6.52 5 7.08 5 8.2v7.6c0 1.12 0 1.68.22 2.1.19.38.5.7.87.88.43.22.99.22 2.1.22h7.61c1.12 0 1.68 0 2.1-.22a2 2 0 0 0 .88-.87c.22-.43.22-.99.22-2.1V14m1-5V4m0 0h-5m5 0-7 7"
+							></path></svg
+						>
+					</div>
+				</div>
+				<div
+					class="flex flex-col w-full h-full p-2 bg-zinc-800 rounded-xl"
+				>
+					<div class="flex flex-row m-2 items-center">
+						<img
+							src={IP.src}
+							class="w-8 h-8"
+							alt="Indore Pack Pvt. Ltd."
+						/>
+						<h3 class="text-2xl ml-4 font-bold text-gray-200">
+							Company Portfolio
+						</h3>
+					</div>
+					<p class="text-md m-2 mx-4 text-gray-300">
+						Developed a company portfolio website for Indore Pack
+						Pvt. Ltd. accomodating all the information about their
+						product lineup and services.
+					</p>
+					<div
+						class="flex flex-row m-2 justify-center items-center mt-auto"
+					>
+						<div
+							class="text-sm text-zinc-800 grid grid-flow-col-dense gap-1"
+						>
+							<div class="bg-emerald-200 rounded-md px-2 py-1">
+								Nuxt.js
+							</div>
+							<div class="bg-emerald-200 rounded-md px-2 py-1">
+								Tailwind
+							</div>
+							<div class="bg-emerald-200 rounded-md px-2 py-1">
+								Cloudflare
+							</div>
+						</div>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-8 h-8 ml-auto text-zinc-200"
+							fill="none"
+							viewBox="0 0 24 24"
+							><path
+								stroke="currentColor"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M10 5H8.2c-1.12 0-1.68 0-2.1.22a2 2 0 0 0-.88.87C5 6.52 5 7.08 5 8.2v7.6c0 1.12 0 1.68.22 2.1.19.38.5.7.87.88.43.22.99.22 2.1.22h7.61c1.12 0 1.68 0 2.1-.22a2 2 0 0 0 .88-.87c.22-.43.22-.99.22-2.1V14m1-5V4m0 0h-5m5 0-7 7"
+							></path></svg
+						>
+					</div>
+				</div>
+			</div>
+			<div class="w-max h-full max-h-[240px]">
+				<div
+					class="w-max h-full mt-2 sm:mt-0 sm:ml-8 text-xl bg-zinc-800 rounded-xl"
+				>
+					<p
+						class="text-zinc-100 whitespace-nowrap font-bold orin-vert px-2 py-4"
+					>
+						More &gt;
+					</p>
+				</div>
+			</div>
+		</div>
 	</div>
 </LandingPage>
