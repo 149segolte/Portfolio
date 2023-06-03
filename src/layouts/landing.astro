@@ -10,7 +10,8 @@ const icon_alt = "149segolte";
 		const content = document.getElementById("content");
 		const left = document.getElementById("left");
 		const right = document.getElementById("right");
-		if (!content || !content.children || !left || !right) {
+		const icon = document.getElementById("icon");
+		if (!content || !content.children || !left || !right || !icon) {
 			return;
 		}
 		const children = content.children.length;
@@ -29,6 +30,9 @@ const icon_alt = "149segolte";
 
 		left.addEventListener("click", prev);
 		right.addEventListener("click", next);
+		icon.addEventListener("click", () => {
+			set_current(0);
+		});
 		set_current(0);
 	});
 
@@ -36,8 +40,9 @@ const icon_alt = "149segolte";
 		current = val;
 		const left = document.getElementById("left");
 		const right = document.getElementById("right");
+		const socials = document.getElementById("socials");
 		const content = document.getElementById("content");
-		if (!left || !right || !content) {
+		if (!left || !right || !content || !socials) {
 			return;
 		}
 
@@ -53,16 +58,22 @@ const icon_alt = "149segolte";
 			left.style.pointerEvents = "none";
 			right.style.opacity = "1";
 			right.style.pointerEvents = "all";
+			socials.style.opacity = "1";
+			socials.style.pointerEvents = "all";
 		} else if (current == slides.length - 1) {
 			left.style.opacity = "1";
 			left.style.pointerEvents = "all";
 			right.style.opacity = "0";
 			right.style.pointerEvents = "none";
+			socials.style.opacity = "0";
+			socials.style.pointerEvents = "none";
 		} else {
 			left.style.opacity = "1";
 			left.style.pointerEvents = "all";
 			right.style.opacity = "1";
 			right.style.pointerEvents = "all";
+			socials.style.opacity = "1";
+			socials.style.pointerEvents = "all";
 		}
 	}
 
@@ -121,9 +132,10 @@ const icon_alt = "149segolte";
 				class="w-full h-full bg-white rounded-[3rem] shadow-2xl border-[10px] border-zinc-700 flex flex-row relative"
 			>
 				<img
+					id="icon"
 					src={icon.src}
 					alt={icon_alt}
-					class="w-16 h-16 my-4 mx-5"
+					class="w-16 h-16 my-4 mx-5 cursor-pointer z-10"
 				/>
 				<div
 					id="content"
@@ -182,7 +194,8 @@ const icon_alt = "149segolte";
 					Resume
 				</a>
 				<div
-					class="absolute bottom-0 right-0 z-10 flex flex-row justify-center items-center text-zinc-700 p-2"
+					id="socials"
+					class="absolute bottom-0 right-0 z-10 flex flex-row justify-center items-center text-zinc-700 p-2 transition-all duration-300"
 				>
 					<a href="https://twitter.com/149segolte">
 						<svg
