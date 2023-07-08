@@ -12,34 +12,33 @@ import Enigma from "../assets/Enigma.png";
 </style>
 
 <LandingPage>
-	<section>
-		<h1 class="text-4xl lg:text-5xl 2xl:text-6xl font-bold text-gray-800">
+	<section slot="hero">
+		<h1 class="text-3xl lg:text-4xl 2xl:text-6xl font-bold text-gray-800">
 			Hi, I am
 			<br />
 			<span
-				class="text-5xl lg:text-6xl 2xl:text-7xl bg-gradient-to-r from-emerald-400 to-emerald-700 bg-clip-text text-transparent"
+				class="text-4xl whitespace-nowrap lg:text-6xl 2xl:text-7xl bg-gradient-to-r from-emerald-400 to-emerald-700 bg-clip-text text-transparent"
 				>Shreyansh Nayak</span
 			>,
-			<br />
+			<br class="hidden md:block" />
 			currently an undergrad student
-			<br />
+			<br class="hidden md:block" />
 			tinkering with <span class="text-emerald-600">Machine Learning</span
 			>
-			<br />
-			and <span class="text-emerald-600">Full-stack Development</span>.
-			<br />
+			<br class="hidden md:block" />
+			and <span class="text-emerald-600"
+				><span class="whitespace-nowrap">Full-stack</span> Development</span
+			>.
 		</h1>
 	</section>
 
-	<section
-		class="w-full h-max py-16 md:py-16 lg:py-20 xl:py-24 flex flex-col"
-	>
+	<section class="w-full h-max my-0 md:py-16 lg:py-20 xl:py-24 flex flex-col">
 		<h1 class="text-2xl lg:text-3xl 2xl:text-4xl font-bold text-gray-800">
 			Things I have worked on,
 		</h1>
 		<div class="w-full h-max mt-8 flex flex-col sm:flex-row">
 			<div
-				class="w-full h-full grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-h-[240px]"
+				class="w-full h-full grid gap-8 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3"
 			>
 				<div
 					class="flex flex-col w-full h-full p-2 bg-zinc-800 rounded-xl"
@@ -50,11 +49,13 @@ import Enigma from "../assets/Enigma.png";
 							class="w-8 h-8"
 							alt="Indore Pack Pvt. Ltd."
 						/>
-						<h3 class="text-2xl ml-4 font-bold text-gray-200">
+						<h3
+							class="text-lg 2xl:text-2xl ml-4 font-bold text-gray-200"
+						>
 							Company Portfolio
 						</h3>
 					</div>
-					<p class="text-md m-2 mx-4 text-gray-300">
+					<p class="text-sm 2xl:text-md m-2 mx-4 text-gray-300">
 						Developed a company portfolio website for Indore Pack
 						Pvt. Ltd. accomodating all the information about their
 						product lineup and services.
@@ -71,7 +72,9 @@ import Enigma from "../assets/Enigma.png";
 							<div class="bg-emerald-200 rounded-md px-2 py-1">
 								Tailwind
 							</div>
-							<div class="bg-emerald-200 rounded-md px-2 py-1">
+							<div
+								class="bg-emerald-200 rounded-md px-2 py-1 hidden 2xl:block"
+							>
 								Cloudflare
 							</div>
 						</div>
@@ -118,11 +121,13 @@ import Enigma from "../assets/Enigma.png";
 								style="--darkreader-inline-fill:#7d5804"
 							></path></svg
 						>
-						<h3 class="text-2xl ml-4 font-bold text-gray-200">
+						<h3
+							class="text-lg 2xl:text-2xl ml-4 font-bold text-gray-200"
+						>
 							ML Playground
 						</h3>
 					</div>
-					<p class="text-md m-2 mx-4 text-gray-300">
+					<p class="text-sm 2xl:text-md m-2 mx-4 text-gray-300">
 						Working on a PWA that will allow users to generate the
 						code required to train a machine learning model on their
 						data.
@@ -139,7 +144,9 @@ import Enigma from "../assets/Enigma.png";
 							<div class="bg-emerald-200 rounded-md px-2 py-1">
 								SKLearn
 							</div>
-							<div class="bg-emerald-200 rounded-md px-2 py-1">
+							<div
+								class="hidden lg:block bg-emerald-200 rounded-md px-2 py-1"
+							>
 								Vercel
 							</div>
 						</div>
@@ -164,7 +171,7 @@ import Enigma from "../assets/Enigma.png";
 					</div>
 				</div>
 				<div
-					class="flex flex-col w-full h-full p-2 bg-zinc-800 rounded-xl"
+					class="hidden xl:flex flex-col w-full h-full p-2 bg-zinc-800 rounded-xl"
 				>
 					<div class="flex flex-row m-2 items-center">
 						<img
@@ -172,11 +179,13 @@ import Enigma from "../assets/Enigma.png";
 							class="w-8 h-8"
 							alt="Enigma 2048"
 						/>
-						<h3 class="text-2xl ml-4 font-bold text-gray-200">
+						<h3
+							class="text-lg 2xl:text-2xl ml-4 font-bold text-gray-200"
+						>
 							Enigma 2048
 						</h3>
 					</div>
-					<p class="text-md m-2 mx-4 text-gray-300">
+					<p class="text-sm 2xl:text-md m-2 mx-4 text-gray-300">
 						Developed a 2048 game clone for Android with a twist.
 						The moves with no merges delete a random tile from the
 						board.
@@ -215,12 +224,16 @@ import Enigma from "../assets/Enigma.png";
 					</div>
 				</div>
 			</div>
-			<div class="w-max h-full max-h-[240px] mt-2 sm:mt-0 sm:ml-8">
+			<div
+				class="hidden lg:block w-max h-full max-h-[240px] mt-2 sm:mt-0 sm:ml-8"
+			>
 				<a
 					href="https://github.com/149segolte?tab=repositories"
 					class="w-max h-max text-zinc-200 hover:text-emerald-400 hover:scale-105 transition-all duration-300"
 				>
-					<div class="w-max h-full text-xl bg-zinc-800 rounded-xl">
+					<div
+						class="w-max h-full text-lg 2xl:text-xl bg-zinc-800 rounded-xl"
+					>
 						<p
 							class="whitespace-nowrap font-bold orin-vert px-2 py-4"
 						>
@@ -232,21 +245,24 @@ import Enigma from "../assets/Enigma.png";
 		</div>
 	</section>
 	<section
-		class="w-full h-max py-16 md:py-16 lg:py-20 xl:py-24 flex flex-col"
+		class="w-full h-max max-w-4xl py-16 md:py-16 lg:py-20 xl:py-24 flex flex-col"
+		slot="footer"
 	>
-		<h2
-			class="text-2xl lg:text-3xl xl:text-4xl text-center font-bold text-gray-800"
-		>
+		<h2 class="text-3xl xl:text-4xl sm:text-center font-bold text-gray-800">
 			Get in Touch
 		</h2>
 		<div
-			class="w-full h-max grid grid-cols-1 sm:grid-cols-2 mt-2 sm:mt-4 lg:mt-6 xl:mt-8 divide-x-2 divide-current text-zinc-800"
+			class="w-full h-max grid grid-cols-1 md:grid-cols-2 mt-2 md:mt-4 lg:mt-6 xl:mt-8 divide-y-2 md:divide-y-0 md:divide-x-2 divide-current text-zinc-800"
 		>
 			<div
-				class="flex flex-col justify-center items-end text-zinc-800 mr-2"
+				class="flex flex-col justify-center items-start sm:items-center md:items-end text-zinc-800 mb-2 md:mb-0 md:mr-2"
 			>
-				<div class="flex flex-row justify-center items-center">
-					<p class="text-lg font-medium">Drop a DM on Twitter</p>
+				<div
+					class="flex flex-row-reverse md:flex-row justify-center items-center"
+				>
+					<p class="text-md lg:text-lg font-medium">
+						Drop a DM on Twitter
+					</p>
 					<a href="">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -261,8 +277,12 @@ import Enigma from "../assets/Enigma.png";
 						</svg>
 					</a>
 				</div>
-				<div class="flex flex-row justify-center items-center">
-					<p class="text-lg font-medium">Connect on LinkedIn</p>
+				<div
+					class="flex flex-row-reverse md:flex-row justify-center items-center"
+				>
+					<p class="text-md lg:text-lg font-medium">
+						Connect on LinkedIn
+					</p>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="w-8 h-8 m-2 hover:fill-emerald-600 hover:scale-105 transition duration-300"
@@ -275,8 +295,12 @@ import Enigma from "../assets/Enigma.png";
 							clip-rule="evenodd"></path>
 					</svg>
 				</div>
-				<div class="flex flex-row justify-center items-center">
-					<p class="text-lg font-medium">Help out on GitHub</p>
+				<div
+					class="flex flex-row-reverse md:flex-row justify-center items-center"
+				>
+					<p class="text-md lg:text-lg font-medium">
+						Help out on GitHub
+					</p>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						class="w-8 h-8 m-2 hover:scale-105 hover:fill-emerald-600 transition duration-300"
@@ -290,9 +314,11 @@ import Enigma from "../assets/Enigma.png";
 					</svg>
 				</div>
 			</div>
-			<div class="w-full h-full text-2xl text-zinc-600 pl-4">
+			<div
+				class="w-full h-full text-lg lg:text-xl xl:text-2xl text-zinc-600 pt-3 pl-2 md:pl-4"
+			>
 				<div class="flex justify-center items-center w-full h-full">
-					<p class="font-medium">
+					<p class="font-medium sm:text-center md:text-left">
 						Got a question or proposal, or just want to say hello?
 						Just shoot me an email directly at <a
 							href="mailto:nayakshreyansh14@gmail.com"

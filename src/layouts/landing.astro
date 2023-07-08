@@ -14,19 +14,19 @@ const icon_alt = "149segolte";
 		if (!content || !content.children || !left || !right || !icon) {
 			return;
 		}
-		const children = content.children.length;
+
+		slides[0] = content.children[0];
+		slides[0].classList.add("start");
+		const children = content.children[1].children.length;
 		for (let i = 0; i < children; i++) {
-			slides.push(content.children[i]);
-			if (i == 0) {
-				slides[i].classList.add("start");
-			} else if (i == children - 1) {
-				slides[i].classList.add("end");
+			slides.push(content.children[1].children[i]);
+			if (i == children - 1) {
+				slides[i + 1].classList.add("end");
 			} else {
-				slides[i].classList.add("middle");
+				slides[i + 1].classList.add("middle");
 			}
 		}
-		content.innerHTML = "";
-		content.appendChild(slides[0]);
+		content.removeChild(content.children[1]);
 
 		left.addEventListener("click", prev);
 		right.addEventListener("click", next);
@@ -80,12 +80,14 @@ const icon_alt = "149segolte";
 	function next() {
 		if (current < slides.length - 1) {
 			set_current(current + 1);
+			console.log(current);
 		}
 	}
 
 	function prev() {
 		if (current > 0) {
 			set_current(current - 1);
+			console.log(current);
 		}
 	}
 </script>
@@ -127,30 +129,30 @@ const icon_alt = "149segolte";
 	<body
 		class="w-screen h-screen bg-emerald-50 text-md flex flex-col justify-center items-center"
 	>
-		<div class="container h-4/5">
+		<div class="sm:container h-full m-4 md:m-0 md:p-0 md:h-4/5">
 			<div
-				class="w-full h-full bg-white rounded-[3rem] shadow-2xl border-[10px] border-zinc-700 flex flex-row relative"
+				class="w-full h-full bg-white rounded-[3rem] shadow-2xl border-[10px] border-zinc-700 relative"
 			>
-				<img
-					id="icon"
-					src={icon.src}
-					alt={icon_alt}
-					class="w-16 h-16 my-4 mx-5 cursor-pointer z-10"
-				/>
-				<div
-					id="content"
-					class="w-full h-full flex flex-col justify-center lg:px-16 transition-all duration-300"
-				>
-					<slot name="hero" />
-					<slot />
-					<slot name="footer" />
+				<div class="w-full h-max flex flex-row absolute top-0 z-5">
+					<img
+						id="icon"
+						src={icon.src}
+						alt={icon_alt}
+						class="w-16 h-16 my-4 mx-5 cursor-pointer z-10"
+					/>
+					<a
+						href="https://github.com/149segolte/149segolte/blob/main/Resume.pdf"
+						class="z-10 h-max ml-auto px-8 py-4 text-xl text-emerald-600 font-mono font-bold bg-emerald-100 rounded-bl-[2.4rem] rounded-tr-[2.4rem] hover:bg-emerald-700 hover:text-emerald-50 transition duration-300"
+					>
+						Resume
+					</a>
 				</div>
 				<div
 					id="left"
 					class="w-max h-full flex flex-col justify-center absolute left-0 px-4 transition-all duration-300"
 				>
 					<button
-						class="text-emerald-100 w-16 h-16 m-4 rotate-90 animate-[bounceLeft_1s_infinite] hover:text-emerald-600 transition duration-300"
+						class="text-emerald-100 w-16 h-16 m-4 animate-[bounceRight_1s_infinite] hover:text-emerald-600 transition duration-300"
 					>
 						<svg
 							viewBox="-2.4 -2.4 28.80 28.80"
@@ -187,12 +189,16 @@ const icon_alt = "149segolte";
 						</svg>
 					</button>
 				</div>
-				<a
-					href="https://github.com/149segolte/149segolte/blob/main/Resume.pdf"
-					class="z-10 h-max px-8 py-4 text-xl text-emerald-600 font-mono font-bold bg-emerald-100 rounded-bl-[2.4rem] rounded-tr-[2.4rem] hover:bg-emerald-700 hover:text-emerald-50 transition duration-300"
+				<div
+					id="content"
+					class="w-full h-full flex flex-col justify-center items-center px-8 sm:px-24 xl:px-28 2xl:px-32 transition-all duration-300"
 				>
-					Resume
-				</a>
+					<slot name="hero" />
+					<div class="hidden">
+						<slot />
+						<slot name="footer" />
+					</div>
+				</div>
 				<div
 					id="socials"
 					class="absolute bottom-0 right-0 z-10 flex flex-row justify-center items-center text-zinc-700 p-2 transition-all duration-300"
