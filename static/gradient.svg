@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+    <defs>
+        <filter id="rainbow-filter">
+            <feGaussianBlur stdDeviation="8" />
+            <feOffset dx="2" dy="2" />
+            <feBlend in="SourceGraphic" />
+        </filter>
+
+        <radialGradient id="glow1">
+            <stop offset="0%" stop-color="#3700FF" />
+            <stop offset="100%" stop-color="transparent" />
+        </radialGradient>
+
+        <radialGradient id="glow2">
+            <stop offset="0%" stop-color="#FBA40E" />
+            <stop offset="100%" stop-color="transparent" />
+        </radialGradient>
+
+        <radialGradient id="glow3">
+            <stop offset="0%" stop-color="#9A046B" />
+            <stop offset="100%" stop-color="transparent" />
+        </radialGradient>
+
+        <radialGradient id="glow4">
+            <stop offset="0%" stop-color="#0FA37E" />
+            <stop offset="100%" stop-color="transparent" />
+        </radialGradient>
+    </defs>
+
+    <circle
+        cx="-25"
+        cy="40"
+        r="75"
+        fill="url(#glow1)"
+        filter="url(#rainbow-filter)"
+    >
+        <animateMotion
+            dur="4s"
+            repeatCount="indefinite"
+            path="M55 15a7 15 0 101 0H55"/>
+            <!-- path="M200 100A1 1 0 000 100a1 1 0 00200 0"/> -->
+            <!-- path="M24.6447 25.3553C-46.066 96.066 208.4924 67.7817 137.7817 138.4924S95.3553-45.3553 24.6447 25.3553Z" /> -->
+    </circle>
+
+    <circle
+        cx="0"
+        cy="0"
+        r="75"
+        fill="url(#glow2)"
+        filter="url(#rainbow-filter)"
+    >
+        <animateMotion
+            dur="3s"
+            repeatCount="indefinite"
+            path="M66 15a7 15 0 101 0H66"/>
+            <!-- path="M200 100A1 1 0 000 100a1 1 0 00200 0"/> -->
+            <!-- path="M137.6447 24.6447C208.3553 95.3553-46.2031 67.071 24.5076 137.7817S66.934-46.066 137.6447 24.6447Z" /> -->
+    </circle>
+
+    <circle
+        cx="0"
+        cy="40"
+        r="75"
+        fill="url(#glow1)"
+        filter="url(#rainbow-filter)"
+    >
+        <animateMotion
+            dur="6s"
+            repeatCount="indefinite"
+            path="M100 200A1 1 90 01100 0a1 1 90 010 200"/>
+            <!-- path="M200 100A1 1 0 000 100a1 1 0 00200 0"/> -->
+            <!-- path="M24.6447 25.3553C-46.066 96.066 208.4924 67.7817 137.7817 138.4924S95.3553-45.3553 24.6447 25.3553Z" /> -->
+    </circle>
+
+    <circle
+        cx="0"
+        cy="0"
+        r="75"
+        fill="url(#glow3)"
+        filter="url(#rainbow-filter)"
+    >
+        <animateMotion
+            dur="3s"
+            repeatCount="indefinite"
+            path="M120 15a7 15 0 101 0H120"/>
+            <!-- path="M200 100A1 1 0 000 100a1 1 0 00200 0"/> -->
+            <!-- path="M159.9031 94.7559c-0-100-160 100-160-.0001s160 100 160 .0001Z" /> -->
+    </circle>
+
+    <circle
+        cx="0"
+        cy="0"
+        r="60"
+        fill="url(#glow4)"
+        filter="url(#rainbow-filter)"
+    >
+        <animateMotion
+            dur="5s"
+            repeatCount="indefinite"
+            path="M200 100A1 1 0 000 100a1 1 0 00200 0"/>
+            <!-- path="M55.2441 159.9031c100-0-100-160 .0001-160s-100 160-.0001 160Z" /> -->
+    </circle>
+</svg>

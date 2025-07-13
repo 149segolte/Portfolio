@@ -1,0 +1,467 @@
+{
+    "hero_props": {
+        "tagline": "Hello there, I’m an Software Engineer specializing in AI/ML, currently doing Masters in Computer Science at UFL.",
+        "resume_url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/149segolte/149segolte/main/Resume.pdf",
+        "grid_items": [
+            {
+                "icon": "Rust",
+                "color": "#F74C00"
+            },
+            {
+                "icon": "Svelte",
+                "color": "#FF3E00"
+            },
+            {
+                "icon": "Golang",
+                "color": "#00ADD8"
+            },
+            {
+                "icon": "Cpp",
+                "color": "#00599C"
+            },
+            {
+                "icon": "Python",
+                "color": "#3776AB"
+            },
+            {
+                "icon": "Typescript",
+                "color": "#3178C6"
+            },
+            {
+                "icon": "Terraform",
+                "color": "#844FBA"
+            },
+            {
+                "icon": "Haskell",
+                "color": "#5D4F85"
+            },
+            {
+                "icon": "Zig",
+                "color": "#F7DF1E"
+            }
+        ],
+        "marquee_items": [
+            "Rust",
+            "Svelte",
+            "Golang",
+            "Cpp",
+            "Python",
+            "Typescript",
+            "Terraform",
+            "Haskell",
+            "Zig"
+        ]
+    },
+    "background_props": {
+        "experiences": [
+            {
+                "top_subtitle": "Tech Corp",
+                "title": "Software Engineer",
+                "bottom_subtitle": "Jan 2020 - Present",
+                "image": {
+                    "url": "/images/tech-corp.png",
+                    "alt": "Tech Corp Website"
+                },
+                "tasks": [
+                    {
+                        "header": "Move and hold money",
+                        "description": [
+                            "Previously, emerging financial companies were forced to navigate costly middleware solutions that connected them to outdated sponsor bank systems."
+                        ]
+                    },
+                    {
+                        "header": "Build a modern card program",
+                        "description": [
+                            "Create and manage virtual and physical cards with complete control over spending limits, merchant categories, and real-time transaction monitoring."
+                        ]
+                    },
+                    {
+                        "header": "Launch a banking experience",
+                        "description": [
+                            "Offer a full suite of banking services, including checking accounts, savings accounts, and payment processing, all through a single API."
+                        ]
+                    }
+                ]
+            },
+            {
+                "top_subtitle": "Tech Corp",
+                "title": "Software Engineer",
+                "bottom_subtitle": "Jan 2020 - Present",
+                "image": {
+                    "url": "/images/tech-corp.png",
+                    "alt": "Tech Corp Website"
+                },
+                "tasks": [
+                    {
+                        "header": "Move and hold money",
+                        "description": [
+                            "Previously, emerging financial companies were forced to navigate costly middleware solutions that connected them to outdated sponsor bank systems."
+                        ]
+                    },
+                    {
+                        "header": "Build a modern card program",
+                        "description": [
+                            "Create and manage virtual and physical cards with complete control over spending limits, merchant categories, and real-time transaction monitoring."
+                        ]
+                    },
+                    {
+                        "header": "Launch a banking experience",
+                        "description": [
+                            "Offer a full suite of banking services, including checking accounts, savings accounts, and payment processing, all through a single API."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "education": [
+            {
+                "top_subtitle": "University of Florida",
+                "title": "Master of Science in Computer Science",
+                "bottom_subtitle": "Aug 2022 - May 2024",
+                "description": "Specializing in Artificial Intelligence and Machine Learning. Engaged in advanced research projects and collaborative learning.",
+                "tags": [
+                    {
+                        "name": "Operating Systems",
+                        "color": "#FFF"
+                    }
+                ],
+                "tasks": [
+                    {
+                        "header": "AI Research",
+                        "description": [
+                            "Conducted research on machine learning algorithms and their applications in real-world scenarios."
+                        ]
+                    },
+                    {
+                        "header": "Collaborative Projects",
+                        "description": [
+                            "Worked on team projects to develop innovative software solutions using AI technologies."
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "project_props": {
+        "projects": [
+            {
+                "top_subtitle": "Project Subtitle",
+                "title": "Project Title",
+                "description": "This is a brief description of the project. It highlights the main features and technologies used.",
+                "tags": [
+                    {
+                        "name": "JavaScript",
+                        "color": "#F7DF1E"
+                    },
+                    {
+                        "name": "React",
+                        "color": "#61DAFB"
+                    },
+                    {
+                        "name": "Node.js",
+                        "color": "#68A063"
+                    }
+                ],
+                "external": {
+                    "link": "https://example.com",
+                    "label": "Website"
+                },
+                "tasks": [
+                    {
+                        "header": "Feature 1",
+                        "description": [
+                            "Implemented a feature that allows users to do something amazing."
+                        ]
+                    },
+                    {
+                        "header": "Feature 2",
+                        "description": [
+                            "Developed a component that enhances user experience by providing seamless interactions."
+                        ]
+                    },
+                    {
+                        "header": "Feature 3",
+                        "description": [
+                            "Optimized performance and scalability to handle large datasets efficiently."
+                        ]
+                    }
+                ]
+            },
+            {
+                "top_subtitle": "Project Subtitle",
+                "title": "Project Title",
+                "description": "This is a brief description of the project. It highlights the main features and technologies used.",
+                "tags": [
+                    {
+                        "name": "JavaScript",
+                        "color": "#F7DF1E"
+                    },
+                    {
+                        "name": "React",
+                        "color": "#61DAFB"
+                    },
+                    {
+                        "name": "Node.js",
+                        "color": "#68A063"
+                    }
+                ],
+                "external": {
+                    "link": "https://example.com",
+                    "label": "Website"
+                },
+                "tasks": [
+                    {
+                        "header": "Feature 1",
+                        "description": [
+                            "Implemented a feature that allows users to do something amazing."
+                        ]
+                    },
+                    {
+                        "header": "Feature 2",
+                        "description": [
+                            "Developed a component that enhances user experience by providing seamless interactions."
+                        ]
+                    },
+                    {
+                        "header": "Feature 3",
+                        "description": [
+                            "Optimized performance and scalability to handle large datasets efficiently."
+                        ]
+                    }
+                ]
+            },
+            {
+                "top_subtitle": "Project Subtitle",
+                "title": "Project Title",
+                "description": "This is a brief description of the project. It highlights the main features and technologies used.",
+                "tags": [
+                    {
+                        "name": "JavaScript",
+                        "color": "#F7DF1E"
+                    },
+                    {
+                        "name": "React",
+                        "color": "#61DAFB"
+                    },
+                    {
+                        "name": "Node.js",
+                        "color": "#68A063"
+                    }
+                ],
+                "external": {
+                    "link": "https://example.com",
+                    "label": "Website"
+                },
+                "tasks": [
+                    {
+                        "header": "Feature 1",
+                        "description": [
+                            "Implemented a feature that allows users to do something amazing."
+                        ]
+                    },
+                    {
+                        "header": "Feature 2",
+                        "description": [
+                            "Developed a component that enhances user experience by providing seamless interactions."
+                        ]
+                    },
+                    {
+                        "header": "Feature 3",
+                        "description": [
+                            "Optimized performance and scalability to handle large datasets efficiently."
+                        ]
+                    }
+                ]
+            }
+        ],
+        "small_entries": [
+            {
+                "title": "Small Entry Title",
+                "description": "This is a brief description of the small entry.",
+                "tags": [
+                    {
+                        "name": "JavaScript",
+                        "color": "#F7DF1E"
+                    },
+                    {
+                        "name": "React",
+                        "color": "#61DAFB"
+                    },
+                    {
+                        "name": "Node.js",
+                        "color": "#68A063"
+                    }
+                ],
+                "link": "https://example.com"
+            },
+            {
+                "title": "Small Entry Title",
+                "description": "This is a brief description of the small entry.",
+                "tags": [
+                    {
+                        "name": "JavaScript",
+                        "color": "#F7DF1E"
+                    },
+                    {
+                        "name": "React",
+                        "color": "#61DAFB"
+                    },
+                    {
+                        "name": "Node.js",
+                        "color": "#68A063"
+                    }
+                ],
+                "link": "https://example.com"
+            },
+            {
+                "title": "Small Entry Title",
+                "description": "This is a brief description of the small entry.",
+                "tags": [
+                    {
+                        "name": "JavaScript",
+                        "color": "#F7DF1E"
+                    },
+                    {
+                        "name": "React",
+                        "color": "#61DAFB"
+                    },
+                    {
+                        "name": "Node.js",
+                        "color": "#68A063"
+                    }
+                ],
+                "link": "https://example.com"
+            },
+            {
+                "title": "Small Entry Title",
+                "description": "This is a brief description of the small entry.",
+                "tags": [
+                    {
+                        "name": "JavaScript",
+                        "color": "#F7DF1E"
+                    },
+                    {
+                        "name": "React",
+                        "color": "#61DAFB"
+                    },
+                    {
+                        "name": "Node.js",
+                        "color": "#68A063"
+                    }
+                ],
+                "link": "https://example.com"
+            },
+            {
+                "title": "Small Entry Title",
+                "description": "This is a brief description of the small entry.",
+                "tags": [
+                    {
+                        "name": "JavaScript",
+                        "color": "#F7DF1E"
+                    },
+                    {
+                        "name": "React",
+                        "color": "#61DAFB"
+                    },
+                    {
+                        "name": "Node.js",
+                        "color": "#68A063"
+                    }
+                ],
+                "link": "https://example.com"
+            },
+            {
+                "title": "Small Entry Title",
+                "description": "This is a brief description of the small entry.",
+                "tags": [
+                    {
+                        "name": "JavaScript",
+                        "color": "#F7DF1E"
+                    },
+                    {
+                        "name": "React",
+                        "color": "#61DAFB"
+                    },
+                    {
+                        "name": "Node.js",
+                        "color": "#68A063"
+                    }
+                ],
+                "link": "https://example.com"
+            }
+        ],
+        "notice": {
+            "text": "Browse through the rest of my projects on {link} page.",
+            "label": "GitHub",
+            "link": "https://github.com/149segolte"
+        },
+        "skills": [
+            {
+                "title": "1. Prototype",
+                "subtitle": "Build fast, test early",
+                "description": "Quickly spin up a working model with libraries for popular frameworks like React."
+            },
+            {
+                "title": "2. Present",
+                "subtitle": "Showcase your vision",
+                "description": "Use intuitive plug & play features to prepare a live demo and deploy from our platform."
+            },
+            {
+                "title": "3. Iterate",
+                "subtitle": "Refine and improve",
+                "description": "Continuously enhance your product by integrating with over a hundred tools."
+            },
+            {
+                "title": "4. Deploy",
+                "subtitle": "Launch with confidence",
+                "description": "Deploy securely with encryption, ensuring data compliance and user consent."
+            },
+            {
+                "title": "1. Prototype",
+                "subtitle": "Build fast, test early",
+                "description": "Quickly spin up a working model with libraries for popular frameworks like React."
+            },
+            {
+                "title": "2. Present",
+                "subtitle": "Showcase your vision",
+                "description": "Use intuitive plug & play features to prepare a live demo and deploy from our platform."
+            },
+            {
+                "title": "3. Iterate",
+                "subtitle": "Refine and improve",
+                "description": "Continuously enhance your product by integrating with over a hundred tools."
+            },
+            {
+                "title": "4. Deploy",
+                "subtitle": "Launch with confidence",
+                "description": "Deploy securely with encryption, ensuring data compliance and user consent."
+            }
+        ]
+    },
+    "contact_props": {
+        "primary_links": {
+            "twitter": "https://twitter.com/149segolte",
+            "linkedin": "https://linkedin.com/in/149segolte/",
+            "github": "https://github.com/149segolte"
+        },
+        "email": "nayakshreyansh14@gmail.com",
+        "extra_links": [
+            {
+                "icon": "Discord",
+                "link": "https://discord.com/users/470184798703321099"
+            },
+            {
+                "icon": "Bluesky",
+                "link": "https://bsky.app/profile/149segolte.dev"
+            },
+            {
+                "icon": "Reddit",
+                "link": "https://www.reddit.com/user/149segolte"
+            },
+            {
+                "icon": "Twitch",
+                "link": "https://www.twitch.tv/149segolte"
+            }
+        ]
+    }
+}
