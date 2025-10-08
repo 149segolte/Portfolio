@@ -77,8 +77,5 @@
                 </div>
             </div>
         </div>
-        <div class="w-full mt-2">
-            <AutoScroll items={marquee_items} />
-        </div>
     </div>
 </section>

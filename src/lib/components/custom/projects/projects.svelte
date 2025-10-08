@@ -39,14 +39,14 @@
 </script>
 
 {#snippet SmallCard(details: SmallCardEntry)}
-    <div class="relative p-4">
+    <div class="relative p-4 size-full flex flex-col">
         <div class="flex items-center justify-between">
             <h3 class="text-xl font-medium">{details.title}</h3>
             <Button size="icon" variant="secondary" href={details.link}>
                 <ArrowUpRight />
             </Button>
         </div>
-        <div class="space-y-2 py-4">
+        <div class="space-y-2 py-4 grow">
             <p class="text-muted-foreground line-clamp-2 text-sm">
                 {details.description}
             </p>
@@ -55,7 +55,7 @@
             {#each details.tags as tag}
                 <Badge
                     variant="secondary"
-                    class="text-custom-var"
+                    class="text-custom-var bg-secondary-foreground/80 dark:bg-secondary"
                     style="--custom-color: {tag.color}"
                 >
                     {tag.name}

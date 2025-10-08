@@ -1,103 +1,198 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
-    <defs>
-        <filter id="rainbow-filter">
-            <feGaussianBlur stdDeviation="8" />
-            <feOffset dx="2" dy="2" />
-            <feBlend in="SourceGraphic" />
-        </filter>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="10000" height="2000" viewBox="0 0 10000 2000" data-app="Xyris">
 
-        <radialGradient id="glow1">
-            <stop offset="0%" stop-color="#3700FF" />
-            <stop offset="100%" stop-color="transparent" />
-        </radialGradient>
+    <!-- Primary animated rings -->
+    <ellipse
+        fill="none"
+        stroke="rgb(254,39,18)"
+        stroke-width="384"
+        cx="3734"
+        cy="882"
+        rx="512"
+        ry="512"
+        fill-rule="nonzero"
+        opacity="0.75"
+        style="transform-box: fill-box; mix-blend-mode: darken;"
+        transform="matrix(1,0,0,1,-3734,-882)">
+    <animateMotion begin="-1.5s" dur="3s" fill="freeze" repeatCount="indefinite">
+            <mpath href="#motion-path-mRum9uGWMa2kGSXmg1DGjK" />
+        </animateMotion>
+    </ellipse>
 
-        <radialGradient id="glow2">
-            <stop offset="0%" stop-color="#FBA40E" />
-            <stop offset="100%" stop-color="transparent" />
-        </radialGradient>
+    <ellipse
+        fill="none"
+        stroke="rgb(102,176,50)"
+        stroke-width="256"
+        cx="640"
+        cy="1152"
+        rx="512"
+        ry="512"
+        filter="url(#filter-5NuQR8jBU8qMsTM4RGuabf)"
+        fill-rule="nonzero"
+        opacity="0.75"
+        style="transform-box: fill-box; mix-blend-mode: darken;"
+        transform="matrix(1,0,0,1,-640,-1152)">
+    <animateMotion begin="-0.63s" dur="2.524s" fill="freeze" repeatCount="indefinite">
+            <mpath href="#motion-path-jRsT2uguUL68t2Njhvnj6n" />
+        </animateMotion>
+    </ellipse>
 
-        <radialGradient id="glow3">
-            <stop offset="0%" stop-color="#9A046B" />
-            <stop offset="100%" stop-color="transparent" />
-        </radialGradient>
+    <ellipse
+        fill="none"
+        stroke="rgb(37,76,192)"
+        stroke-width="320"
+        cx="6338.5"
+        cy="1338.04"
+        rx="1024"
+        ry="1024"
+        filter="url(#filter-i9NvRjLGDT2DrDvAPHfi2G)"
+        fill-rule="nonzero"
+        style="transform-box: fill-box; mix-blend-mode: normal;"
+        transform="matrix(1,0,0,1,-6338.5,-1338.04)">
+    <animateMotion begin="-0.9s" dur="2.012s" fill="freeze" repeatCount="indefinite">
+            <mpath href="#motion-path-kzX8P91ctHazXQMqNaRzuH" />
+        </animateMotion>
+    </ellipse>
 
-        <radialGradient id="glow4">
-            <stop offset="0%" stop-color="#0FA37E" />
-            <stop offset="100%" stop-color="transparent" />
-        </radialGradient>
-    </defs>
+    <!-- Additional rings (added earlier) -->
+    <ellipse
+        fill="none"
+        stroke="rgb(255,165,0)"
+        stroke-width="224"
+        cx="2500"
+        cy="500"
+        rx="768"
+        ry="768"
+        fill-rule="nonzero"
+        opacity="0.7"
+        style="transform-box: fill-box; mix-blend-mode: screen;"
+        transform="matrix(1,0,0,1,-2500,-500)">
+    <animateMotion begin="-0.875s" dur="3.5s" fill="freeze" repeatCount="indefinite">
+            <mpath href="#motion-path-4" />
+        </animateMotion>
+    </ellipse>
 
-    <circle
-        cx="-25"
-        cy="40"
-        r="75"
-        fill="url(#glow1)"
-        filter="url(#rainbow-filter)"
-    >
-        <animateMotion
-            dur="4s"
-            repeatCount="indefinite"
-            path="M55 15a7 15 0 101 0H55"/>
-            <!-- path="M200 100A1 1 0 000 100a1 1 0 00200 0"/> -->
-            <!-- path="M24.6447 25.3553C-46.066 96.066 208.4924 67.7817 137.7817 138.4924S95.3553-45.3553 24.6447 25.3553Z" /> -->
-    </circle>
+    <ellipse
+        fill="none"
+        stroke="rgb(218,112,214)"
+        stroke-width="208"
+        cx="8000"
+        cy="1200"
+        rx="640"
+        ry="640"
+        fill-rule="nonzero"
+        opacity="0.65"
+        style="transform-box: fill-box; mix-blend-mode: lighten;"
+        transform="matrix(1,0,0,1,-8000,-1200)">
+    <animateMotion begin="-1.4s" dur="2.8s" fill="freeze" repeatCount="indefinite">
+            <mpath href="#motion-path-5" />
+        </animateMotion>
+    </ellipse>
 
-    <circle
-        cx="0"
-        cy="0"
-        r="75"
-        fill="url(#glow2)"
-        filter="url(#rainbow-filter)"
-    >
-        <animateMotion
-            dur="3s"
-            repeatCount="indefinite"
-            path="M66 15a7 15 0 101 0H66"/>
-            <!-- path="M200 100A1 1 0 000 100a1 1 0 00200 0"/> -->
-            <!-- path="M137.6447 24.6447C208.3553 95.3553-46.2031 67.071 24.5076 137.7817S66.934-46.066 137.6447 24.6447Z" /> -->
-    </circle>
+    <ellipse
+        fill="none"
+        stroke="rgb(255,215,0)"
+        stroke-width="288"
+        cx="4500"
+        cy="1500"
+        rx="896"
+        ry="896"
+        fill-rule="nonzero"
+        opacity="0.8"
+        style="transform-box: fill-box; mix-blend-mode: overlay;"
+        transform="matrix(1,0,0,1,-4500,-1500)">
+    <animateMotion begin="-0.575s" dur="2.3s" fill="freeze" repeatCount="indefinite">
+            <mpath href="#motion-path-6" />
+        </animateMotion>
+    </ellipse>
 
-    <circle
-        cx="0"
-        cy="40"
-        r="75"
-        fill="url(#glow1)"
-        filter="url(#rainbow-filter)"
-    >
-        <animateMotion
-            dur="6s"
-            repeatCount="indefinite"
-            path="M100 200A1 1 90 01100 0a1 1 90 010 200"/>
-            <!-- path="M200 100A1 1 0 000 100a1 1 0 00200 0"/> -->
-            <!-- path="M24.6447 25.3553C-46.066 96.066 208.4924 67.7817 137.7817 138.4924S95.3553-45.3553 24.6447 25.3553Z" /> -->
-    </circle>
+    <ellipse
+        fill="none"
+        stroke="rgb(0,206,209)"
+        stroke-width="192"
+        cx="1800"
+        cy="1000"
+        rx="700"
+        ry="700"
+        fill-rule="nonzero"
+        opacity="0.7"
+        style="transform-box: fill-box; mix-blend-mode: color-dodge;"
+        transform="matrix(1,0,0,1,-1800,-1000)">
+    <animateMotion begin="-1.6s" dur="3.2s" fill="freeze" repeatCount="indefinite">
+            <mpath href="#motion-path-7" />
+        </animateMotion>
+    </ellipse>
 
-    <circle
-        cx="0"
-        cy="0"
-        r="75"
-        fill="url(#glow3)"
-        filter="url(#rainbow-filter)"
-    >
-        <animateMotion
-            dur="3s"
-            repeatCount="indefinite"
-            path="M120 15a7 15 0 101 0H120"/>
-            <!-- path="M200 100A1 1 0 000 100a1 1 0 00200 0"/> -->
-            <!-- path="M159.9031 94.7559c-0-100-160 100-160-.0001s160 100 160 .0001Z" /> -->
-    </circle>
+    <ellipse
+        fill="none"
+        stroke="rgb(138,43,226)"
+        stroke-width="240"
+        cx="7200"
+        cy="600"
+        rx="820"
+        ry="820"
+        fill-rule="nonzero"
+        opacity="0.75"
+        style="transform-box: fill-box; mix-blend-mode: hard-light;"
+        transform="matrix(1,0,0,1,-7200,-600)">
+    <animateMotion begin="-0.66s" dur="2.65s" fill="freeze" repeatCount="indefinite">
+            <mpath href="#motion-path-8" />
+        </animateMotion>
+    </ellipse>
 
-    <circle
-        cx="0"
-        cy="0"
-        r="60"
-        fill="url(#glow4)"
-        filter="url(#rainbow-filter)"
-    >
-        <animateMotion
-            dur="5s"
-            repeatCount="indefinite"
-            path="M200 100A1 1 0 000 100a1 1 0 00200 0"/>
-            <!-- path="M55.2441 159.9031c100-0-100-160 .0001-160s-100 160-.0001 160Z" /> -->
-    </circle>
+    <!-- Motion paths (rounded coordinates for readability) -->
+    <path
+        id="motion-path-mRum9uGWMa2kGSXmg1DGjK"
+        d="M 3583 243 A 4697 744 0 0 1 8279 987 A 4697 744 0 0 1 3583 1731 A 4697 744 0 0 1 -1115 987 A 4697 744 0 0 1 3583 243 Z"
+        fill="none" stroke="#000" stroke-width="8" />
+
+    <path
+        id="motion-path-kzX8P91ctHazXQMqNaRzuH"
+        d="M 6155 -1013 A 3648 1873 0 0 1 9803 860 A 3648 1873 0 0 1 6155 2733 A 3648 1873 0 0 1 2507 860 A 3648 1873 0 0 1 6155 -1013 Z"
+        fill="none" stroke="#000" stroke-width="8"
+        transform="matrix(-0.894,-0.449,0.449,-0.894,0,0)"
+        transform-origin="center" style="transform-box: fill-box;" />
+
+    <path
+        id="motion-path-jRsT2uguUL68t2Njhvnj6n"
+        d="M 4511 1309 A 2829 1308 0 0 0 7340 2617 A 2829 1308 0 0 0 10169 1309 A 2829 1308 0 0 0 7340 1 A 2829 1308 0 0 0 4511 1309 Z"
+        fill="none" stroke="#000" stroke-width="8"
+        transform="matrix(0.423,-0.906,0.906,0.423,0,0)"
+        transform-origin="center" style="transform-box: fill-box;" />
+
+    <path
+        id="motion-path-4"
+        d="M 1700 1050 A 3500 950 0 0 0 5200 2000 A 3500 950 0 0 0 8700 1050 A 3500 950 0 0 0 5200 100 A 3500 950 0 0 0 1700 1050 Z"
+        fill="none" stroke="#000" stroke-width="8"
+        transform="matrix(0.866,-0.5,0.5,0.866,0,0)"
+        transform-origin="center" style="transform-box: fill-box;" />
+
+    <path
+        id="motion-path-5"
+        d="M 4800 200 A 4200 1100 0 0 1 9000 1300 A 4200 1100 0 0 1 4800 2400 A 4200 1100 0 0 1 600 1300 A 4200 1100 0 0 1 4800 200 Z"
+        fill="none" stroke="#000" stroke-width="8"
+        transform="matrix(-0.707,0.707,-0.707,-0.707,0,0)"
+        transform-origin="center" style="transform-box: fill-box;" />
+
+    <path
+        id="motion-path-6"
+        d="M 2700 1500 A 3800 1200 0 0 0 6500 2700 A 3800 1200 0 0 0 10300 1500 A 3800 1200 0 0 0 6500 300 A 3800 1200 0 0 0 2700 1500 Z"
+        fill="none" stroke="#000" stroke-width="8"
+        transform="matrix(0.5,-0.866,0.866,0.5,0,0)"
+        transform-origin="center" style="transform-box: fill-box;" />
+
+    <path
+        id="motion-path-7"
+        d="M 5800 150 A 3200 850 0 0 1 9000 1000 A 3200 850 0 0 1 5800 1850 A 3200 850 0 0 1 2600 1000 A 3200 850 0 0 1 5800 150 Z"
+        fill="none" stroke="#000" stroke-width="8"
+        transform="matrix(-0.5,-0.866,0.866,-0.5,0,0)"
+        transform-origin="center" style="transform-box: fill-box;" />
+
+    <path
+        id="motion-path-8"
+        d="M 2800 1300 A 4000 1050 0 0 0 6800 2350 A 4000 1050 0 0 0 10800 1300 A 4000 1050 0 0 0 6800 250 A 4000 1050 0 0 0 2800 1300 Z"
+        fill="none" stroke="#000" stroke-width="8"
+        transform="matrix(0.259,0.966,-0.966,0.259,0,0)"
+        transform-origin="center" style="transform-box: fill-box;" />
+
 </svg>

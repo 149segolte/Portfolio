@@ -55,7 +55,7 @@
                     </div>
                 </a>
             </div>
-            <div class="justify-center flex flex-col gap-4 px-8">
+            <div class="justify-center flex flex-col gap-4 pl-8 md:pr-12">
                 <span>
                     Have a question, idea, or just want to connect? Just shoot
                     me an email at

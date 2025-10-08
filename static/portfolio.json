@@ -1,467 +1,389 @@
 {
-    "hero_props": {
-        "tagline": "Hello there, I’m an Software Engineer specializing in AI/ML, currently doing Masters in Computer Science at UFL.",
-        "resume_url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/149segolte/149segolte/main/Resume.pdf",
-        "grid_items": [
-            {
-                "icon": "Rust",
-                "color": "#F74C00"
-            },
-            {
-                "icon": "Svelte",
-                "color": "#FF3E00"
-            },
-            {
-                "icon": "Golang",
-                "color": "#00ADD8"
-            },
-            {
-                "icon": "Cpp",
-                "color": "#00599C"
-            },
-            {
-                "icon": "Python",
-                "color": "#3776AB"
-            },
-            {
-                "icon": "Typescript",
-                "color": "#3178C6"
-            },
-            {
-                "icon": "Terraform",
-                "color": "#844FBA"
-            },
-            {
-                "icon": "Haskell",
-                "color": "#5D4F85"
-            },
-            {
-                "icon": "Zig",
-                "color": "#F7DF1E"
-            }
-        ],
-        "marquee_items": [
-            "Rust",
-            "Svelte",
-            "Golang",
-            "Cpp",
-            "Python",
-            "Typescript",
-            "Terraform",
-            "Haskell",
-            "Zig"
-        ]
-    },
-    "background_props": {
-        "experiences": [
-            {
-                "top_subtitle": "Tech Corp",
-                "title": "Software Engineer",
-                "bottom_subtitle": "Jan 2020 - Present",
-                "image": {
-                    "url": "/images/tech-corp.png",
-                    "alt": "Tech Corp Website"
-                },
-                "tasks": [
-                    {
-                        "header": "Move and hold money",
-                        "description": [
-                            "Previously, emerging financial companies were forced to navigate costly middleware solutions that connected them to outdated sponsor bank systems."
-                        ]
-                    },
-                    {
-                        "header": "Build a modern card program",
-                        "description": [
-                            "Create and manage virtual and physical cards with complete control over spending limits, merchant categories, and real-time transaction monitoring."
-                        ]
-                    },
-                    {
-                        "header": "Launch a banking experience",
-                        "description": [
-                            "Offer a full suite of banking services, including checking accounts, savings accounts, and payment processing, all through a single API."
-                        ]
-                    }
-                ]
-            },
-            {
-                "top_subtitle": "Tech Corp",
-                "title": "Software Engineer",
-                "bottom_subtitle": "Jan 2020 - Present",
-                "image": {
-                    "url": "/images/tech-corp.png",
-                    "alt": "Tech Corp Website"
-                },
-                "tasks": [
-                    {
-                        "header": "Move and hold money",
-                        "description": [
-                            "Previously, emerging financial companies were forced to navigate costly middleware solutions that connected them to outdated sponsor bank systems."
-                        ]
-                    },
-                    {
-                        "header": "Build a modern card program",
-                        "description": [
-                            "Create and manage virtual and physical cards with complete control over spending limits, merchant categories, and real-time transaction monitoring."
-                        ]
-                    },
-                    {
-                        "header": "Launch a banking experience",
-                        "description": [
-                            "Offer a full suite of banking services, including checking accounts, savings accounts, and payment processing, all through a single API."
-                        ]
-                    }
-                ]
-            }
-        ],
-        "education": [
-            {
-                "top_subtitle": "University of Florida",
-                "title": "Master of Science in Computer Science",
-                "bottom_subtitle": "Aug 2022 - May 2024",
-                "description": "Specializing in Artificial Intelligence and Machine Learning. Engaged in advanced research projects and collaborative learning.",
-                "tags": [
-                    {
-                        "name": "Operating Systems",
-                        "color": "#FFF"
-                    }
-                ],
-                "tasks": [
-                    {
-                        "header": "AI Research",
-                        "description": [
-                            "Conducted research on machine learning algorithms and their applications in real-world scenarios."
-                        ]
-                    },
-                    {
-                        "header": "Collaborative Projects",
-                        "description": [
-                            "Worked on team projects to develop innovative software solutions using AI technologies."
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    "project_props": {
-        "projects": [
-            {
-                "top_subtitle": "Project Subtitle",
-                "title": "Project Title",
-                "description": "This is a brief description of the project. It highlights the main features and technologies used.",
-                "tags": [
-                    {
-                        "name": "JavaScript",
-                        "color": "#F7DF1E"
-                    },
-                    {
-                        "name": "React",
-                        "color": "#61DAFB"
-                    },
-                    {
-                        "name": "Node.js",
-                        "color": "#68A063"
-                    }
-                ],
-                "external": {
-                    "link": "https://example.com",
-                    "label": "Website"
-                },
-                "tasks": [
-                    {
-                        "header": "Feature 1",
-                        "description": [
-                            "Implemented a feature that allows users to do something amazing."
-                        ]
-                    },
-                    {
-                        "header": "Feature 2",
-                        "description": [
-                            "Developed a component that enhances user experience by providing seamless interactions."
-                        ]
-                    },
-                    {
-                        "header": "Feature 3",
-                        "description": [
-                            "Optimized performance and scalability to handle large datasets efficiently."
-                        ]
-                    }
-                ]
-            },
-            {
-                "top_subtitle": "Project Subtitle",
-                "title": "Project Title",
-                "description": "This is a brief description of the project. It highlights the main features and technologies used.",
-                "tags": [
-                    {
-                        "name": "JavaScript",
-                        "color": "#F7DF1E"
-                    },
-                    {
-                        "name": "React",
-                        "color": "#61DAFB"
-                    },
-                    {
-                        "name": "Node.js",
-                        "color": "#68A063"
-                    }
-                ],
-                "external": {
-                    "link": "https://example.com",
-                    "label": "Website"
-                },
-                "tasks": [
-                    {
-                        "header": "Feature 1",
-                        "description": [
-                            "Implemented a feature that allows users to do something amazing."
-                        ]
-                    },
-                    {
-                        "header": "Feature 2",
-                        "description": [
-                            "Developed a component that enhances user experience by providing seamless interactions."
-                        ]
-                    },
-                    {
-                        "header": "Feature 3",
-                        "description": [
-                            "Optimized performance and scalability to handle large datasets efficiently."
-                        ]
-                    }
-                ]
-            },
-            {
-                "top_subtitle": "Project Subtitle",
-                "title": "Project Title",
-                "description": "This is a brief description of the project. It highlights the main features and technologies used.",
-                "tags": [
-                    {
-                        "name": "JavaScript",
-                        "color": "#F7DF1E"
-                    },
-                    {
-                        "name": "React",
-                        "color": "#61DAFB"
-                    },
-                    {
-                        "name": "Node.js",
-                        "color": "#68A063"
-                    }
-                ],
-                "external": {
-                    "link": "https://example.com",
-                    "label": "Website"
-                },
-                "tasks": [
-                    {
-                        "header": "Feature 1",
-                        "description": [
-                            "Implemented a feature that allows users to do something amazing."
-                        ]
-                    },
-                    {
-                        "header": "Feature 2",
-                        "description": [
-                            "Developed a component that enhances user experience by providing seamless interactions."
-                        ]
-                    },
-                    {
-                        "header": "Feature 3",
-                        "description": [
-                            "Optimized performance and scalability to handle large datasets efficiently."
-                        ]
-                    }
-                ]
-            }
-        ],
-        "small_entries": [
-            {
-                "title": "Small Entry Title",
-                "description": "This is a brief description of the small entry.",
-                "tags": [
-                    {
-                        "name": "JavaScript",
-                        "color": "#F7DF1E"
-                    },
-                    {
-                        "name": "React",
-                        "color": "#61DAFB"
-                    },
-                    {
-                        "name": "Node.js",
-                        "color": "#68A063"
-                    }
-                ],
-                "link": "https://example.com"
-            },
-            {
-                "title": "Small Entry Title",
-                "description": "This is a brief description of the small entry.",
-                "tags": [
-                    {
-                        "name": "JavaScript",
-                        "color": "#F7DF1E"
-                    },
-                    {
-                        "name": "React",
-                        "color": "#61DAFB"
-                    },
-                    {
-                        "name": "Node.js",
-                        "color": "#68A063"
-                    }
-                ],
-                "link": "https://example.com"
-            },
-            {
-                "title": "Small Entry Title",
-                "description": "This is a brief description of the small entry.",
-                "tags": [
-                    {
-                        "name": "JavaScript",
-                        "color": "#F7DF1E"
-                    },
-                    {
-                        "name": "React",
-                        "color": "#61DAFB"
-                    },
-                    {
-                        "name": "Node.js",
-                        "color": "#68A063"
-                    }
-                ],
-                "link": "https://example.com"
-            },
-            {
-                "title": "Small Entry Title",
-                "description": "This is a brief description of the small entry.",
-                "tags": [
-                    {
-                        "name": "JavaScript",
-                        "color": "#F7DF1E"
-                    },
-                    {
-                        "name": "React",
-                        "color": "#61DAFB"
-                    },
-                    {
-                        "name": "Node.js",
-                        "color": "#68A063"
-                    }
-                ],
-                "link": "https://example.com"
-            },
-            {
-                "title": "Small Entry Title",
-                "description": "This is a brief description of the small entry.",
-                "tags": [
-                    {
-                        "name": "JavaScript",
-                        "color": "#F7DF1E"
-                    },
-                    {
-                        "name": "React",
-                        "color": "#61DAFB"
-                    },
-                    {
-                        "name": "Node.js",
-                        "color": "#68A063"
-                    }
-                ],
-                "link": "https://example.com"
-            },
-            {
-                "title": "Small Entry Title",
-                "description": "This is a brief description of the small entry.",
-                "tags": [
-                    {
-                        "name": "JavaScript",
-                        "color": "#F7DF1E"
-                    },
-                    {
-                        "name": "React",
-                        "color": "#61DAFB"
-                    },
-                    {
-                        "name": "Node.js",
-                        "color": "#68A063"
-                    }
-                ],
-                "link": "https://example.com"
-            }
-        ],
-        "notice": {
-            "text": "Browse through the rest of my projects on {link} page.",
-            "label": "GitHub",
-            "link": "https://github.com/149segolte"
+  "hero_props": {
+    "tagline": "Hello there, I’m a Software Engineer specializing in AI/ML, currently pursuing M.S. in Computer Science at University of Florida.",
+    "resume_url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/149segolte/149segolte/main/Resume.pdf",
+    "grid_items": [
+      {
+        "icon": "Rust",
+        "color": "#F74C00"
+      },
+      {
+        "icon": "Golang",
+        "color": "#00ADD8"
+      },
+      {
+        "icon": "Python",
+        "color": "#3776AB"
+      },
+      {
+        "icon": "Cpp",
+        "color": "#00599C"
+      },
+      {
+        "icon": "Typescript",
+        "color": "#3178C6"
+      },
+      {
+        "icon": "Haskell",
+        "color": "#5D4F85"
+      },
+      {
+        "icon": "Zig",
+        "color": "#F7DF1E"
+      },
+      {
+        "icon": "Terraform",
+        "color": "#844FBA"
+      },
+      {
+        "icon": "Svelte",
+        "color": "#FF3E00"
+      }
+    ]
+  },
+  "background_props": {
+    "experiences": [
+      {
+        "top_subtitle": "Klaar Digital Solutions",
+        "title": "Backend Developer",
+        "bottom_subtitle": "Jan 2024 – Sep 2024",
+        "image": {
+          "url": "/images/klaar.png",
+          "alt": "https://klaarhq.com"
         },
-        "skills": [
-            {
-                "title": "1. Prototype",
-                "subtitle": "Build fast, test early",
-                "description": "Quickly spin up a working model with libraries for popular frameworks like React."
-            },
-            {
-                "title": "2. Present",
-                "subtitle": "Showcase your vision",
-                "description": "Use intuitive plug & play features to prepare a live demo and deploy from our platform."
-            },
-            {
-                "title": "3. Iterate",
-                "subtitle": "Refine and improve",
-                "description": "Continuously enhance your product by integrating with over a hundred tools."
-            },
-            {
-                "title": "4. Deploy",
-                "subtitle": "Launch with confidence",
-                "description": "Deploy securely with encryption, ensuring data compliance and user consent."
-            },
-            {
-                "title": "1. Prototype",
-                "subtitle": "Build fast, test early",
-                "description": "Quickly spin up a working model with libraries for popular frameworks like React."
-            },
-            {
-                "title": "2. Present",
-                "subtitle": "Showcase your vision",
-                "description": "Use intuitive plug & play features to prepare a live demo and deploy from our platform."
-            },
-            {
-                "title": "3. Iterate",
-                "subtitle": "Refine and improve",
-                "description": "Continuously enhance your product by integrating with over a hundred tools."
-            },
-            {
-                "title": "4. Deploy",
-                "subtitle": "Launch with confidence",
-                "description": "Deploy securely with encryption, ensuring data compliance and user consent."
-            }
+        "tasks": [
+          {
+            "header": "GenAI Deployment",
+            "description": [
+              "Integrated GenAI chatbot functionalities using LangChain and natural language processing models, connecting with Salesforce, Jira, and Slack to automate workflows and reduce task delays by 25%."
+            ]
+          },
+          {
+            "header": "Microservices Resilience",
+            "description": [
+              "Leveraged Apache Kafka for efficient inter‑service communication, optimizing message passing and streamlining workflows, resulting in a 45% reduction in latency."
+            ]
+          },
+          {
+            "header": "Code Quality & CI/CD Maintenance",
+            "description": [
+              "Conducted extensive code refactoring and quality enhancements for Django‑backed systems deployed on Kubernetes, improving CI/CD pipelines with Sonar for automated code quality checks, accelerating development cycles."
+            ]
+          }
         ]
-    },
-    "contact_props": {
-        "primary_links": {
-            "twitter": "https://twitter.com/149segolte",
-            "linkedin": "https://linkedin.com/in/149segolte/",
-            "github": "https://github.com/149segolte"
+      },
+      {
+        "top_subtitle": "Indore Pack Pvt. Ltd.",
+        "title": "DevOps Intern",
+        "bottom_subtitle": "May 2023 – Jul 2023",
+        "image": {
+          "url": "/images/indorepack.png",
+          "alt": "https://indorepack.com"
         },
-        "email": "nayakshreyansh14@gmail.com",
-        "extra_links": [
-            {
-                "icon": "Discord",
-                "link": "https://discord.com/users/470184798703321099"
-            },
-            {
-                "icon": "Bluesky",
-                "link": "https://bsky.app/profile/149segolte.dev"
-            },
-            {
-                "icon": "Reddit",
-                "link": "https://www.reddit.com/user/149segolte"
-            },
-            {
-                "icon": "Twitch",
-                "link": "https://www.twitch.tv/149segolte"
-            }
+        "tasks": [
+          {
+            "header": "Cloudflare Zero Trust & SSO",
+            "description": [
+              "Established self‑hosted development, API, and email servers on Cloudflare Zero Trust with SSO, enhancing system reliability."
+            ]
+          },
+          {
+            "header": "Edge Performance & SEO",
+            "description": [
+              "Boosted SEO and improved rendering by optimizing images, assets, and documents, resulting in a 45% reduced payload on an edge‑deployed frontend."
+            ]
+          },
+          {
+            "header": "Monitoring & Backups",
+            "description": [
+              "Implemented automated backups and uptime monitoring for critical services, strengthening reliability and incident response."
+            ]
+          }
         ]
-    }
+      }
+    ],
+    "education": [
+      {
+        "top_subtitle": "University of Florida",
+        "title": "Master of Science, Computer Science",
+        "bottom_subtitle": "Jan 2025 – Dec 2026",
+        "description": "",
+        "tags": [
+          { "name": "Graduate Studies", "color": "#4F46E5" },
+          { "name": "Systems", "color": "#10B981" },
+          { "name": "AI/ML", "color": "#F59E0B" }
+        ],
+        "tasks": [
+          {
+            "header": "Core Coursework",
+            "description": [
+              "Advanced Data Structures; Computer Networks",
+              "Database Systems; Software Engineering",
+              "Trustworthy Machine Learning; Distributed Operating Systems"
+            ]
+          },
+          {
+            "header": "Certificate Program",
+            "description": [
+              "1 of 4 students selected (from 400+) for a competitive 6‑month program based on merit in the USA."
+            ]
+          }
+        ]
+      },
+      {
+        "top_subtitle": "Jaypee University of Engineering and Technology",
+        "title": "Bachelor of Technology, Computer Science (AI)",
+        "bottom_subtitle": "Aug 2021 – May 2025",
+        "description": "AI specialization.",
+        "tags": [
+          { "name": "AI Specialization", "color": "#5D4F85" },
+          { "name": "Systems", "color": "#10B981" },
+          { "name": "Algorithms", "color": "#FF1493" }
+        ],
+        "tasks": [
+          {
+            "header": "Core Coursework",
+            "description": [
+              "Operating Systems; Data Structures & Algorithms",
+              "Computer Networks; Object‑Oriented Programming",
+              "Digital Systems & Microprocessors; Computer Organization & Architecture",
+              "Database Systems"
+            ]
+          },
+          {
+            "header": "Specialization",
+            "description": [
+              "Machine Learning, Artificial Neural Networks, Deep Learning, Soft Intelligence, Reinforcement Learning."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "project_props": {
+    "projects": [
+      {
+        "top_subtitle": "TimelyGator",
+        "title": "Dynamic Time Tracking Application Suite",
+        "description": "Cross‑platform suite with a Go‑powered REST API, CLI utility, and a Chrome extension to capture and analyze user activity.",
+        "tags": [
+          {
+            "name": "Go",
+            "color": "#00ADD8"
+          },
+          {
+            "name": "SQLite",
+            "color": "#003B57"
+          },
+          {
+            "name": "ChromeExt",
+            "color": "#4285F4"
+          }
+        ],
+        "external": {
+          "link": "https://github.com/149segolte/timelygator",
+          "label": "GitHub"
+        },
+        "tasks": [
+          {
+            "header": "Observation Tooling",
+            "description": [
+              "Implemented observation tooling for Linux/X11, Windows/WinAPI, and macOS/JXA to provide cross‑platform insights."
+            ]
+          },
+          {
+            "header": "Backend APIs & Persistence",
+            "description": [
+              "Designed a performant backend in Go: REST APIs with Gorilla Mux, data persistence with GORM and SQLite, and a Cobra‑based CLI."
+            ]
+          },
+          {
+            "header": "Browser Extension",
+            "description": [
+              "Built a Manifest V3 Chrome extension using message passing and chrome.storage.sync for data handling and persistence."
+            ]
+          }
+        ]
+      },
+      {
+        "top_subtitle": "Adaptive Neuron Simulation",
+        "title": "Adaptive Neuron Simulation with Genetic Algorithms",
+        "description": "Rust + WebAssembly simulation modeling neuron survival behaviors with an interactive OpenGL visualization.",
+        "tags": [
+          {
+            "name": "Rust",
+            "color": "#000000"
+          },
+          {
+            "name": "WebAssembly",
+            "color": "#654FF0"
+          },
+          {
+            "name": "OpenGL",
+            "color": "#5586A4"
+          }
+        ],
+        "external": {
+          "link": "https://neuron.149segolte.dev",
+          "label": "Demo"
+        },
+        "tasks": [
+          {
+            "header": "Genetic Algorithm",
+            "description": [
+              "Developed a genetic algorithm in Rust and WebAssembly to model neuron survival behaviors through mutation and crossover strategies, achieving 95% validation in predicting neuron adaptation."
+            ]
+          },
+          {
+            "header": "Visualization",
+            "description": [
+              "Created an interactive visualization on top of OpenGL that dynamically illustrates neural adaptation and survival strategies."
+            ]
+          }
+        ]
+      },
+      {
+        "top_subtitle": "ML Playground",
+        "title": "Machine Learning Playground",
+        "description": "Automation tooling in Rust and Python with a Svelte UI for rapid setup, training, and comparison of ML experiments.",
+        "tags": [
+          {
+            "name": "Rust",
+            "color": "#000000"
+          },
+          {
+            "name": "Python",
+            "color": "#3776AB"
+          },
+          {
+            "name": "Svelte",
+            "color": "#FF3E00"
+          }
+        ],
+        "external": {
+          "link": "https://mlp.149segolte.dev",
+          "label": "Demo"
+        },
+        "tasks": [
+          {
+            "header": "Automation",
+            "description": [
+              "Engineered an automation tool in Rust and Python to streamline ML model training and comparison, reducing development setup time by 70%."
+            ]
+          },
+          {
+            "header": "Interactive Web App",
+            "description": [
+              "Built an interactive web app using Svelte and Node.js, integrating Protobufs, gRPC, and Redis caching, which accelerated large dataset predictions by 40% and retained query history."
+            ]
+          }
+        ]
+      }
+    ],
+    "small_entries": [
+      {
+        "title": "Homelab Dotfiles",
+        "description": "Terraform + Ansible to manage a Proxmox node.",
+        "tags": [
+          { "name": "Infra", "color": "#64748B" },
+          { "name": "Terraform", "color": "#7C3AED" },
+          { "name": "Ansible", "color": "#F59E0B" }
+        ],
+        "link": "https://github.com/149segolte/homelab"
+      },
+      {
+        "title": "C# to Rust",
+        "description": "Converts C# files to Rust using the Tree‑sitter parsing API.",
+        "tags": [
+          { "name": "Tree‑sitter", "color": "#22C55E" },
+          { "name": "C#", "color": "#3B82F6" },
+          { "name": "Rust", "color": "#EF4444" }
+        ],
+        "link": "https://github.com/149segolte/treesitter_csharp_to_rust"
+      },
+      {
+        "title": "Carton",
+        "description": "CLI tool in Rust to interact with the Hetzner Cloud API.",
+        "tags": [
+          { "name": "Rust", "color": "#EF4444" },
+          { "name": "CLI", "color": "#0EA5E9" },
+          { "name": "Hetzner", "color": "#F97316" }
+        ],
+        "link": "https://github.com/149segolte/carton"
+      }
+    ],
+    "notice": {
+      "text": "Browse through the rest of my projects on {link}.",
+      "label": "GitHub",
+      "link": "https://github.com/149segolte"
+    },
+    "skills": [
+      {
+        "title": "Rust & Go",
+        "subtitle": "Systems & Backends",
+        "description": "Build reliable services, CLIs, and low‑latency systems with strong concurrency and type safety."
+      },
+      {
+        "title": "Python",
+        "subtitle": "Data & ML",
+        "description": "Prototyping, data wrangling, and ML tooling for experimentation and pipelines."
+      },
+      {
+        "title": "C/C++",
+        "subtitle": "Performance",
+        "description": "Low‑level programming, memory management, and performance‑critical components."
+      },
+      {
+        "title": "JS/TS & Svelte",
+        "subtitle": "Web",
+        "description": "Interactive UIs and tooling; comfortable across front‑end build and integration."
+      },
+      {
+        "title": "AI/ML",
+        "subtitle": "PyTorch, scikit, LangChain",
+        "description": "Model training, evaluation, and GenAI integrations for practical applications."
+      },
+      {
+        "title": "GPGPU",
+        "subtitle": "CUDA & Vulkan",
+        "description": "Parallel compute and graphics pipelines; accelerate workloads where it counts."
+      },
+      {
+        "title": "DevOps & Cloud",
+        "subtitle": "Docker, Terraform, GCP/AWS",
+        "description": "Automated provisioning, CI/CD, observability, and secure infrastructure."
+      },
+      {
+        "title": "Infra & Tools",
+        "subtitle": "Tailscale, Proxmox, Nix",
+        "description": "Networking, hypervisors, reproducible systems, and developer productivity."
+      }
+    ]
+  },
+  "contact_props": {
+    "primary_links": {
+      "twitter": "https://twitter.com/149segolte",
+      "linkedin": "https://linkedin.com/in/149segolte/",
+      "github": "https://github.com/149segolte"
+    },
+    "email": "nayakshreyansh14@gmail.com",
+    "extra_links": [
+      {
+        "icon": "Discord",
+        "link": "https://discord.com/users/470184798703321099"
+      },
+      {
+        "icon": "Bluesky",
+        "link": "https://bsky.app/profile/149segolte.dev"
+      },
+      {
+        "icon": "Reddit",
+        "link": "https://www.reddit.com/user/149segolte"
+      },
+      {
+        "icon": "Twitch",
+        "link": "https://www.twitch.tv/149segolte"
+      }
+    ]
+  }
 }

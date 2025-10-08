@@ -113,7 +113,7 @@
                     {#each details.tags as tag}
                         <Badge
                             variant="secondary"
-                            class="text-custom-var"
+                            class="text-custom-var bg-secondary-foreground/80 dark:bg-secondary"
                             style="--custom-color: {tag.color}"
                         >
                             {tag.name}
@@ -158,7 +158,7 @@
     ]}
     {...rest}
 >
-    <Card.Content class={[!padding && "p-0"]}>
+    <Card.Content class={["size-full", !padding && "p-0"]}>
         {@render body(data)}
     </Card.Content>
 </Card.Root>
