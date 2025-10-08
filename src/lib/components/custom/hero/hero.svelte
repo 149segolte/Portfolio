@@ -8,17 +8,27 @@
     import ArrowRight from "@lucide/svelte/icons/arrow-right";
 
     export type HeroProps = SvelteHTMLElements["section"] & {
-        tagline: string;
+        template_with_hash: string;
+        template_val: string[];
         resume_url: string;
+        github_url: string;
+        linkedin_url: string;
         grid_items: { icon: string; color: string }[];
         marquee_items: string[];
     };
 </script>
 
 <script lang="ts">
-    let { tagline, resume_url, grid_items, marquee_items, ...rest }: HeroProps =
+    let { template_with_hash, template_val, resume_url, github_url, linkedin_url, grid_items, marquee_items, ...rest }: HeroProps =
         $props();
+
+    let tagline = template_with_hash.split("#")
+
 </script>
+
+{#snippet tag_bold(val: string)}
+    <span class="text-primary/80">{val}</span>
+{/snippet}
 
 {#snippet GridItem(item: { icon: string; color: string })}
     <Button
@@ -46,12 +56,20 @@
                 <h2
                     class="text-balance text-2xl font-medium md:text-3xl lg:text-4xl 2xl:text-5xl font-contrail-one"
                 >
-                    {tagline}
+                    {#each template_val as val, index (index)}
+                        {tagline[index]}
+                        {@render tag_bold(val)}
+                    {/each}
+                    <span class="-ml-2">
+                        {tagline[template_val.length]}
+                    </span>
                 </h2>
                 <div
                     class="flex gap-4 items-center justify-center *:rounded-full"
                 >
                     <Button href={resume_url} size="lg">Resume</Button>
+                    <Button href={github_url} size="icon" class="*:size-5!"> <Icon icon="Github" /></Button>
+                    <Button href={linkedin_url} size="icon" class="*:size-5!"> <Icon icon="Linkedin" /></Button>
                     <Button href="/#contact" size="lg" variant="secondary">
                         Get In Touch
                         <ArrowRight />

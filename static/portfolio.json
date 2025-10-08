@@ -1,7 +1,10 @@
 {
   "hero_props": {
-    "tagline": "Hello there, I’m a Software Engineer specializing in AI/ML, currently pursuing M.S. in Computer Science at University of Florida.",
+    "template_with_hash": "Hello there, I’m a # specializing in AI/ML, pursuing # in Computer Science at #.",
+    "template_val": ["Software Engineer", "Masters", "University of Florida"],
     "resume_url": "https://docs.google.com/viewer?url=https://raw.githubusercontent.com/149segolte/149segolte/main/Resume.pdf",
+    "github_url": "https://github.com/149segolte",
+    "linkedin_url": "https://www.linkedin.com/in/149segolte/",
     "grid_items": [
       {
         "icon": "Rust",
@@ -107,19 +110,13 @@
         "top_subtitle": "University of Florida",
         "title": "Master of Science, Computer Science",
         "bottom_subtitle": "Jan 2025 – Dec 2026",
-        "description": "",
-        "tags": [
-          { "name": "Graduate Studies", "color": "#4F46E5" },
-          { "name": "Systems", "color": "#10B981" },
-          { "name": "AI/ML", "color": "#F59E0B" }
-        ],
+        "description": "GPA: 4/4, Top 1% in class",
+        "tags": [],
         "tasks": [
           {
             "header": "Core Coursework",
             "description": [
-              "Advanced Data Structures; Computer Networks",
-              "Database Systems; Software Engineering",
-              "Trustworthy Machine Learning; Distributed Operating Systems"
+              "Trustworthy Machine Learning; Advanced Data Structures; Computer Networks; Distributed Operating Systems; Database Systems; Software Engineering"
             ]
           },
           {
@@ -132,22 +129,15 @@
       },
       {
         "top_subtitle": "Jaypee University of Engineering and Technology",
-        "title": "Bachelor of Technology, Computer Science (AI)",
+        "title": "Bachelor of Technology, Computer Science",
         "bottom_subtitle": "Aug 2021 – May 2025",
-        "description": "AI specialization.",
-        "tags": [
-          { "name": "AI Specialization", "color": "#5D4F85" },
-          { "name": "Systems", "color": "#10B981" },
-          { "name": "Algorithms", "color": "#FF1493" }
-        ],
+        "description": "GPA: 9.4/10; Specialization: Artificial Intelligence",
+        "tags": [],
         "tasks": [
           {
             "header": "Core Coursework",
             "description": [
-              "Operating Systems; Data Structures & Algorithms",
-              "Computer Networks; Object‑Oriented Programming",
-              "Digital Systems & Microprocessors; Computer Organization & Architecture",
-              "Database Systems"
+              "Operating Systems; Database Systems; Computer Networks; Object‑Oriented Programming; Data Structures & Algorithms; Digital Systems & Microprocessors; Computer Organization & Architecture"
             ]
           },
           {
@@ -163,8 +153,8 @@
   "project_props": {
     "projects": [
       {
-        "top_subtitle": "TimelyGator",
-        "title": "Dynamic Time Tracking Application Suite",
+        "top_subtitle": "Real Time Monitoring",
+        "title": "Dynamic Time Tracking App Suite",
         "description": "Cross‑platform suite with a Go‑powered REST API, CLI utility, and a Chrome extension to capture and analyze user activity.",
         "tags": [
           {
@@ -173,10 +163,10 @@
           },
           {
             "name": "SQLite",
-            "color": "#003B57"
+            "color": "#107B97"
           },
           {
-            "name": "ChromeExt",
+            "name": "Chrome Ext",
             "color": "#4285F4"
           }
         ],
@@ -206,17 +196,17 @@
         ]
       },
       {
-        "top_subtitle": "Adaptive Neuron Simulation",
-        "title": "Adaptive Neuron Simulation with Genetic Algorithms",
+        "top_subtitle": "Genetic Algorithms",
+        "title": "Adaptive Neuron Simulation",
         "description": "Rust + WebAssembly simulation modeling neuron survival behaviors with an interactive OpenGL visualization.",
         "tags": [
           {
             "name": "Rust",
-            "color": "#000000"
+            "color": "#C4853D"
           },
           {
             "name": "WebAssembly",
-            "color": "#654FF0"
+            "color": "#654FE0"
           },
           {
             "name": "OpenGL",
@@ -224,7 +214,7 @@
           }
         ],
         "external": {
-          "link": "https://neuron.149segolte.dev",
+          "link": "https://neuro.149segolte.dev",
           "label": "Demo"
         },
         "tasks": [
@@ -243,13 +233,13 @@
         ]
       },
       {
-        "top_subtitle": "ML Playground",
+        "top_subtitle": "MLOps & Automation",
         "title": "Machine Learning Playground",
         "description": "Automation tooling in Rust and Python with a Svelte UI for rapid setup, training, and comparison of ML experiments.",
         "tags": [
           {
             "name": "Rust",
-            "color": "#000000"
+            "color": "#C4853D"
           },
           {
             "name": "Python",
@@ -275,6 +265,12 @@
             "header": "Interactive Web App",
             "description": [
               "Built an interactive web app using Svelte and Node.js, integrating Protobufs, gRPC, and Redis caching, which accelerated large dataset predictions by 40% and retained query history."
+            ]
+          },
+          {
+            "header": "Model Integrations",
+            "description": [
+              "Integrated various ML models including Hugging Face transformers, PyTorch, and TensorFlow, enabling seamless experimentation and deployment."
             ]
           }
         ]
@@ -319,26 +315,6 @@
     },
     "skills": [
       {
-        "title": "Rust & Go",
-        "subtitle": "Systems & Backends",
-        "description": "Build reliable services, CLIs, and low‑latency systems with strong concurrency and type safety."
-      },
-      {
-        "title": "Python",
-        "subtitle": "Data & ML",
-        "description": "Prototyping, data wrangling, and ML tooling for experimentation and pipelines."
-      },
-      {
-        "title": "C/C++",
-        "subtitle": "Performance",
-        "description": "Low‑level programming, memory management, and performance‑critical components."
-      },
-      {
-        "title": "JS/TS & Svelte",
-        "subtitle": "Web",
-        "description": "Interactive UIs and tooling; comfortable across front‑end build and integration."
-      },
-      {
         "title": "AI/ML",
         "subtitle": "PyTorch, scikit, LangChain",
         "description": "Model training, evaluation, and GenAI integrations for practical applications."
@@ -357,6 +333,26 @@
         "title": "Infra & Tools",
         "subtitle": "Tailscale, Proxmox, Nix",
         "description": "Networking, hypervisors, reproducible systems, and developer productivity."
+      },
+      {
+        "title": "Rust & Go",
+        "subtitle": "Systems & Backends",
+        "description": "Build reliable services, CLIs, and low‑latency systems with strong concurrency and type safety."
+      },
+      {
+        "title": "Python",
+        "subtitle": "Data & ML",
+        "description": "Prototyping, data wrangling, and ML tooling for experimentation and pipelines."
+      },
+      {
+        "title": "C/C++",
+        "subtitle": "Performance",
+        "description": "Low‑level programming, memory management, and performance‑critical components."
+      },
+      {
+        "title": "JS/TS & Svelte",
+        "subtitle": "Web",
+        "description": "Interactive UIs and tooling; comfortable across front‑end build and integration."
       }
     ]
   },
@@ -381,8 +377,8 @@
         "link": "https://www.reddit.com/user/149segolte"
       },
       {
-        "icon": "Twitch",
-        "link": "https://www.twitch.tv/149segolte"
+        "icon": "Leetcode",
+        "link": "https://leetcode.com/149segolte"
       }
     ]
   }

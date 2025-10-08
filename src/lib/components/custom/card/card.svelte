@@ -104,22 +104,24 @@
 
             {#if details.description}
                 <span class="text-muted-foreground">{details.description}</span>
-                <div
-                    class={[
-                        "flex flex-wrap gap-3 border-t border-dashed pt-4 mt-2 w-full",
-                        orientation == "left" ? "justify-start" : "justify-end",
-                    ]}
-                >
-                    {#each details.tags as tag}
-                        <Badge
-                            variant="secondary"
-                            class="text-custom-var bg-secondary-foreground/80 dark:bg-secondary"
-                            style="--custom-color: {tag.color}"
-                        >
-                            {tag.name}
-                        </Badge>
-                    {/each}
-                </div>
+                {#if details.tags && details.tags.length > 0}
+                    <div
+                        class={[
+                            "flex flex-wrap gap-3 border-t border-dashed pt-4 mt-2 w-full",
+                            orientation == "left" ? "justify-start" : "justify-end",
+                        ]}
+                    >
+                        {#each details.tags as tag}
+                            <Badge
+                                variant="secondary"
+                                class="text-custom-var bg-secondary-foreground/80 dark:bg-secondary"
+                                style="--custom-color: {tag.color}"
+                            >
+                                {tag.name}
+                            </Badge>
+                        {/each}
+                    </div>
+                {/if}
             {:else if details.image}
                 <img
                     alt={details.image.alt}
@@ -137,10 +139,10 @@
                             {task.header}
                         </Accordion.Trigger>
                         <Accordion.Content
-                            class="flex flex-col gap-4 text-balance text-muted-foreground font-medium leading-relaxed max-sm:px-5"
+                            class="flex flex-col gap-2 text-balance text-muted-foreground font-medium leading-relaxed max-sm:px-5"
                         >
                             {#each task.description as desc}
-                                <p>{desc}</p>
+                                <span>{desc}</span>
                             {/each}
                         </Accordion.Content>
                     </Accordion.Item>
